@@ -7,11 +7,6 @@
   body {
     font-family: 'Arial', sans-serif;
     color: white;
-    background-image: url("https://static.wixstatic.com/media/11062b_9cfaac085b8a47e0be8396781872fba9~mv2.jpg/v1/fill/w_1028,h_660,fp_0.38_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_9cfaac085b8a47e0be8396781872fba9~mv2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
   
   /* Header styles */
@@ -37,6 +32,11 @@
     text-shadow: 1px 1px 0 #fff;
     line-height: 1.2;
   }
+  .logo a{
+      color: black;
+      text-decoration: none;
+      text-shadow: 1px 1px 0 #fff;
+  }
   .nav-links {
     list-style: none;
     display: flex;
@@ -47,13 +47,15 @@
     color: #333;
     font-weight: 500;
   }
+  .nav-links a:hover{
+    color:  #b372c0;
+  }
   .contact-button {
     background-color: black;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 25px;
     text-decoration: none;
-    font-weight: bold;
   }
   
   /* Hero section */
@@ -67,6 +69,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
   .hero-overlay {
     text-align: left;
@@ -91,6 +95,9 @@
     font-weight: 600;
     border: 1px solid white;
   }
+
+  /* Footer section*/
+
   .footer {
     background: #fff;
     padding: 2rem 5%;
@@ -101,14 +108,23 @@
     max-width: 600px;
     color: black;
   }
-  
-  .footer h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+
+  .footer-logo{
+    width: 40px; /* Small logo */
+    height: auto;
   }
   
-  .footer p {
+  .footer-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    font-weight: bold;
+    margin-top: 0 0 20px;
+  }
+  
+  .footer-text p {
+    margin: 5px 0;
+    font-size: 1rem;
   }
   
   .footer ul {
@@ -128,4 +144,179 @@
   .footer ul li a:hover {
     text-decoration: underline;
   }
-  
+
+  /* Our Classes Section */
+.classes-section {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+  color: black;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.class-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.class-card {
+  width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+}
+
+.class-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-content hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.card-content p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.book-btn {
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #333;
+}
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #f9f7fb;
+}
+
+.about-text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.silhouette-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-image {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 30px 0 0 30px;
+  object-fit: cover;
+}
+.team-section {
+  background-color: #dcc4e8;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.team-header h2 {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.3rem;
+}
+
+.team-header p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.team-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #000;
+}
