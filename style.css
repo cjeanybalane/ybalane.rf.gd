@@ -1,187 +1,131 @@
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #9400d3 ;
-    margin: 0;
-    padding: 0;
-    background-image: url("https://static.wixstatic.com/media/11062b_9cfaac085b8a47e0be8396781872fba9~mv2.jpg/v1/fill/w_1028,h_660,fp_0.38_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_9cfaac085b8a47e0be8396781872fba9~mv2.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-background-repeat: no-repeat;
-
-}
-
-.container{
-  background-color: #E6E6FA;
-    border-radius: 5px;
-    padding: 50px;
-    width: 270px;
-    height: 500px;
-    position: absolute;
-    top: 120px;
-    right: 60px;
-    border-width: 2px;
-    border-style: solid;
-    box-shadow: 0px 0px 5px 5px rgba(9, 23, 226, 0.5);
-}
-.avatar {
-    border-radius: 50px;
-    object-fit: cover;
-    margin-bottom: 2px;
-    margin-left: 35px;
-}
-
-h2 {
-    text-align: center;
-    color:white;
-    font: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: white;
-}
-
-input[type="text"],
-input[type="password"] {
-    text-align: left;
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-input[type="submit"] {
-    width: 87%;
-    background-color: #f11e1e;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    background-image: linear-gradient(rgb(145, 16, 231), black);
-    font-weight: bold;
-}
-  .navbar{
-  width: 100px;
-  height: 75px;
-  margin: auto;
- }
-  .icon{
-  width: 200px;
-  height: 75px;
-  margin: auto;
- }
-  .logo{
-  color: white;
-  font-size: 25px;
-  font-family: Arial;
-  text-align:  left;
-  padding-top: 15px;
-  margin-top: 5px;
- }
-  .menu{
-  width: 190px;
-  float: left;
-  height: 80px;
-  align-items: center;
-
- }
+/* Reset & base styles */
 * {
     margin: 0;
     padding: 0;
-}
-
-.main {
-    width: 100%;
-    background-position: center;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-image: url("https://static.wixstatic.com/media/11062b_9cfaac085b8a47e0be8396781872fba9~mv2.jpg/v1/fill/w_1028,h_660,fp_0.38_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_9cfaac085b8a47e0be8396781872fba9~mv2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position: center;
 }
-
-.nav{
-height: 80px;
-  background-color: #e3a7eb;
-  opacity: 0.9;
-}
-
-.icon {
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-
-.logo {
-    color: white;
-    font-size: 35px;
-    font-family: Arial;
-    padding-left: 20px;
-    float: left;
-    padding-top: 15px;
-    margin-top: 5px
-}
-
-ul {
-    margin-bottom: auto;
-    float: left;
+  
+  /* Header styles */
+  header {
+    background-color: #d4addc;
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    
-}
-
-ul li {
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 25px;
-    color: white;
-    margin-right: 100px;
-    transition: color 0.3s ease;
-}
-
-ul li a {
-    text-decoration: none;
-    color: white;
-    font-family: Arial;
+    justify-content: center;
+  }
+  .nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-ul li a:hover {
-    color: blue;
-}
-
-  .search {
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
- .main-text {
-      position: absolute;
-      top: 25%;
-      left: 5%;
-      max-width: 50%;
-      
-    }
-
-    .main-text h1 {
-      font-size: 65px;
-      color: white;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 
-                   0 0 10px rgba(255, 255, 255, 0.3);
-      font-weight: bold;
-      line-height: 1.2;
-      text-align: left;
-    }
-
-    .main-text p {
-      font-size: 20px;
-      color: white;
-      line-height: 1.6;
-      text-align: left;
-    }
+    font-size: 1.2rem;
+    color: black;
+    text-shadow: 1px 1px 0 #fff;
+    line-height: 1.2;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  .contact-button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero section */
+  .hero {
+    background: linear-gradient(to right, #3a003f, #006c9c);
+    background-image: url("https://static.wixstatic.com/media/11062b_9cfaac085b8a47e0be8396781872fba9~mv2.jpg/v1/fill/w_1028,h_660,fp_0.38_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_9cfaac085b8a47e0be8396781872fba9~mv2.jpg"); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .hero-overlay {
+    text-align: left;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .join-button {
+    background: black;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid white;
+  }
+  .footer {
+    background: #fff;
+    padding: 2rem 5%;
+    border-top: 1px solid #ccc;
+  }
+  
+  .footer-content {
+    max-width: 600px;
+    color: black;
+  }
+  
+  .footer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer p {
+    margin-bottom: 1rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
